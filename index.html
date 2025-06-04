@@ -4,49 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Southeast Districts Check-In</title>
- <style>
+<style>
   * {
     box-sizing: border-box;
   }
 
-  body {
+  html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    height: 100%;
+    width: 100%;
   }
 
   .container {
-    background: white;
     padding: 6vw;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
-    text-align: center;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   img.logo {
     width: 60vw;
-    max-width: 240px;
-    margin-bottom: 5vw;
+    max-width: 260px;
+    margin-bottom: 6vw;
   }
 
   h1 {
     font-size: 6vw;
     margin-bottom: 6vw;
     color: #b00000;
+    text-align: center;
   }
 
   .button {
-    display: block;
     width: 100%;
     padding: 5vw;
-    margin: 4vw 0;
+    margin: 3vw 0;
     font-size: 5vw;
     font-weight: bold;
     color: white;
@@ -62,14 +61,16 @@
   }
 
   footer {
-    margin-top: 6vw;
+    margin-top: auto;
     font-size: 3.5vw;
     color: #777;
+    text-align: center;
+    padding-top: 5vw;
   }
 
   @media (min-width: 600px) {
     .container {
-      padding: 40px 24px;
+      padding: 40px;
     }
 
     h1 {
@@ -79,7 +80,6 @@
     .button {
       font-size: 18px;
       padding: 16px;
-      margin: 12px 0;
       border-radius: 8px;
     }
 
@@ -88,6 +88,7 @@
     }
   }
 </style>
+
 </head>
 <body>
   <div class="container">
