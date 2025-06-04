@@ -1,85 +1,105 @@
-<style>
-  * {
-    box-sizing: border-box;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Southeast Districts Check-In</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-  .container {
-    background: white;
-    padding: 5vh 5vw;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-  }
+    .container {
+      background: white;
+      padding: 40px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
 
-  img.logo {
-    width: 60%;
-    max-width: 260px;
-    height: auto;
-    margin-bottom: 24px;
-  }
+    img.logo {
+      width: 220px;
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
 
-  h1 {
-    font-size: 5vw;
-    color: #b00000;
-    margin-bottom: 30px;
-  }
-
-  .button {
-    display: block;
-    width: 100%;
-    padding: 5vw;
-    font-size: 4.5vw;
-    font-weight: bold;
-    color: white;
-    background-color: #b00000;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 16px 0;
-    transition: background-color 0.3s ease;
-  }
-
-  .button:hover {
-    background-color: #8d0000;
-  }
-
-  footer {
-    margin-top: 30px;
-    font-size: 3.5vw;
-    color: #777;
-  }
-
-  @media (min-width: 600px) {
     h1 {
-      font-size: 24px;
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      color: #b00000;
     }
 
     .button {
-      font-size: 18px;
-      padding: 14px;
+      display: block;
+      width: 100%;
+      padding: 18px;
+      margin: 14px 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #b00000;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #8d0000;
     }
 
     footer {
-      font-size: 14px;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #777;
     }
-  }
-</style>
 
+    /* 📱 Mobile Optimization */
+    @media (max-width: 600px) {
+      body {
+        padding: 0;
+        margin: 0;
+      }
 
+      .container {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 40px 20px;
+      }
 
+      img.logo {
+        width: 70%;
+      }
+
+      h1 {
+        font-size: 6vw;
+      }
+
+      .button {
+        font-size: 5vw;
+        padding: 16px;
+      }
+
+      footer {
+        font-size: 3.8vw;
+      }
+    }
+  </style>
+</head>
 <body>
   <div class="container">
     <img src="ata-martial-arts-logo-color%20-%20Copy.png" alt="ATA Logo" class="logo">
@@ -92,3 +112,4 @@
     <footer>Powered by ATA Southeast Districts</footer>
   </div>
 </body>
+</html>
