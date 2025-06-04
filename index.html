@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>District Check-In</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f8f8;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Welcome to Southeast Districts Check-In</h2>
+
+  <img src="menu.png" usemap="#checkin-map" alt="Check-In Menu">
+
+  <map name="checkin-map">
+    <!-- Coordinates are % based on image height (assumes 768px height) -->
+    <area shape="rect" coords="0,170,768,320" href="https://example.com/competitor" alt="Competitor Check-In">
+    <area shape="rect" coords="0,320,768,520" href="https://example.com/assigned" alt="Assigned Judge Check-In">
+    <area shape="rect" coords="0,520,768,700" href="https://example.com/not-assigned" alt="Not Assigned Judge Check-In">
+  </map>
+
+</body>
+</html>
