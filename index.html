@@ -1,35 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>District Check-In</title>
+  <title>Southeast District Check-In</title>
   <style>
     body {
-      margin: 0;
+      background-color: #f4f4f4;
       font-family: Arial, sans-serif;
+      padding: 20px;
       text-align: center;
-      background-color: #f8f8f8;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+
+    .container {
+      max-width: 500px;
       margin: auto;
+    }
+
+    img.logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #b00000;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      background-color: #b00000;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #8d0000;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <img src="menu.png" usemap="#checkin-map" alt="Check-In Menu">
+  <div class="container">
+    <img src="ata-logo.png" alt="ATA Logo" class="logo">
+    <h1>Southeast Districts Check-In</h1>
 
-  <map name="checkin-map">
-    <!-- Coordinates are % based on image height (assumes 768px height) -->
-    <area shape="rect" coords="0,170,768,320" href="https://tinyurl.com/ATASED" alt="Competitor Check-In">
-    <area shape="rect" coords="0,320,768,520" href="https://example.com/assigned" alt="Assigned Judge Check-In">
-    <area shape="rect" coords="0,520,768,700" href="https://example.com/not-assigned" alt="Not Assigned Judge Check-In">
-  </map>
+    <a href="https://tinyurl.com/ATASED" class="button">✅ Competitor Check-In</a>
+    <a href="https://example.com/assigned" class="button">🎯 Assigned Judge Check-In</a>
+    <a href="https://example.com/not-assigned" class="button">❓ Not Assigned Judge Check-In</a>
+
+    <footer>Powered by ATA Southeast Districts</footer>
+  </div>
 
 </body>
 </html>
